@@ -1,1 +1,47 @@
+@import "~bootstrap/dist/css/bootstrap.css";
 /* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.img-profile {
+    width: 45px;
+    height: 45px;
+    border: solid 4px transparent;
+    border-radius: 80px;
+}
+
+.img-gradient-pink {
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgba(238,174,202,1) 0%,rgba(148,187,233,1) 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.profil-buttons {
+    margin-right: 1em !important ;
+}
+
+.profile-btn {
+    margin-right: 1em;
+    border-radius: 70px;
+    justify-content: center;
+    height: min-content;
+    width: 4em;
+    font-size: small;
+    color:white
+
+}
+
+.profile-btn.delete {
+    background-color: rgba(238,174,202,1);
+    border: 0;
+}
+
+.profile-btn.add {
+    background-color: rgba(238,174,202,1);
+    border: 0;
+}
+
+/*override mat-card-header css empty space */
+.mat-card-header-text {
+    margin: 0 0 !important;
+}
